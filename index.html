@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Spotify Gift</title>
+<style>
+    body {
+        margin: 0;
+        background: #121212;
+        font-family: Arial, sans-serif;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 30px;
+    }
+    .card {
+        width: 340px;
+        background: #181818;
+        border-radius: 18px;
+        padding: 20px;
+        box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    }
+    .cover {
+        width: 100%;
+        border-radius: 12px;
+    }
+    .title {
+        font-size: 22px;
+        font-weight: bold;
+        margin-top: 15px;
+    }
+    .artist {
+        font-size: 16px;
+        margin-top: 5px;
+        color: #b3b3b3;
+    }
+    .controls {
+        margin-top: 25px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        font-size: 32px;
+        cursor: pointer;
+    }
+    .controls div:hover {
+        color: #1DB954;
+    }
+</style>
+</head>
+<body>
+
+<div class="card">
+    <!-- Kapak fotoğrafı -->
+    <img class="cover" src="https://drive.google.com/uc?export=view&id=1tTd5pDJ20FKukYvhk5hcxxetksISLf9l" />
+
+    <!-- Şarkı bilgileri (istersen değiştiririm) -->
+    <div class="title">Senin İçin</div>
+    <div class="artist">Ahmet ❤</div>
+
+    <!-- Kontroller -->
+    <div class="controls">
+        <div onclick="playSong()">▶</div>
+    </div>
+</div>
+
+<script>
+function playSong() {
+    window.location.href = "https://drive.google.com/uc?export=download&id=1I6T5dnuccW0r06xRTxzyeEH8sZU0OIOY";
+}
+</script>
+
+</body>
+</html>
