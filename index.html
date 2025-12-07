@@ -3,63 +3,79 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bizim Sayfamız</title>
+  <title>Bir Yağmur Meselesi</title>
   <style>
     body {
       margin: 0;
       padding: 0;
-      font-family: Arial, sans-serif;
-      background: #f5f5f5;
+      font-family: "Inter", sans-serif;
+      background: linear-gradient(135deg, #1a1a1a, #2e2e2e);
       display: flex;
       justify-content: center;
       align-items: center;
       min-height: 100vh;
+      color: #fff;
     }
 
     .card {
-      width: 90%;
-      max-width: 450px;
-      background: #ffffff;
-      border-radius: 20px;
-      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-      overflow: hidden;
+      width: 92%;
+      max-width: 420px;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(18px);
+      border-radius: 25px;
+      padding: 20px;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
       text-align: center;
+      border: 1px solid rgba(255,255,255,0.1);
     }
 
-    .image-container img {
+    .cover img {
       width: 100%;
-      display: block;
+      border-radius: 18px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
     }
 
     h1 {
-      margin: 20px 0 10px;
-      font-size: 26px;
-      color: #222;
+      font-size: 28px;
+      margin: 20px 0 5px;
+      font-weight: 700;
+      letter-spacing: 1px;
     }
 
     p {
-      margin: 0 20px 20px;
+      margin: 0 0 20px;
       font-size: 16px;
-      color: #555;
+      opacity: 0.8;
     }
 
     audio {
-      width: 90%;
-      margin-bottom: 25px;
+      width: 100%;
+      margin-top: 15px;
+      filter: drop-shadow(0 0 8px rgba(255,255,255,0.2));
+    }
+
+    .footer {
+      margin-top: 15px;
+      font-size: 12px;
+      opacity: 0.4;
     }
   </style>
 </head>
 <body>
   <div class="card">
-    <div class="image-container">
-      <img src="kapak.jpg" alt="Kapak Görseli" />
+    <div class="cover">
+      <img src="kapak.jpg" alt="Biz" />
     </div>
+
     <h1>Bir Yağmur Meselesi</h1>
-    <p>YAMAH 💜</p>
+    <p>Senin için sevgilim 💜</p>
+
     <audio controls>
       <source src="sarki.mp3" type="audio/mpeg">
       Tarayıcı ses dosyasını desteklemiyor.
     </audio>
+
+    <div class="footer">Sadece bize özel bir an 💫</div>
   </div>
 </body>
 </html>
