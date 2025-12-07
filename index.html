@@ -1,49 +1,65 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-<meta charset="UTF-8">
-<title>Bize Özel</title>
-<style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bizim Sayfamız</title>
+  <style>
     body {
-        background: #121212;
-        font-family: Arial, sans-serif;
-        color: white;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 40px;
-        margin: 0;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
     }
+
     .card {
-        background: #181818;
-        padding: 20px;
-        border-radius: 12px;
-        width: 320px;
-        text-align: center;
-        box-shadow: 0 0 20px rgba(0,0,0,0.6);
+      width: 90%;
+      max-width: 450px;
+      background: #ffffff;
+      border-radius: 20px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+      overflow: hidden;
+      text-align: center;
     }
-    img {
-        width: 100%;
-        border-radius: 12px;
-        margin-bottom: 20px;
+
+    .image-container img {
+      width: 100%;
+      display: block;
     }
+
+    h1 {
+      margin: 20px 0 10px;
+      font-size: 26px;
+      color: #222;
+    }
+
+    p {
+      margin: 0 20px 20px;
+      font-size: 16px;
+      color: #555;
+    }
+
     audio {
-        width: 100%;
-        margin-top: 15px;
+      width: 90%;
+      margin-bottom: 25px;
     }
-</style>
+  </style>
 </head>
 <body>
-
-<div class="card">
-    <img src="kapak.jpg" alt="Biz">
-    <h2>Senin İçin</h2>
-
+  <div class="card">
+    <div class="image-container">
+      <img src="kapak.jpg" alt="Kapak Görseli" />
+    </div>
+    <h1>Bir Yağmur Meselesi</h1>
+    <p>YAMAH 💜</p>
     <audio controls>
-        <source src="sarki.mp3" type="audio/mpeg">
-        Tarayıcın ses dosyasını desteklemiyor.
+      <source src="sarki.mp3" type="audio/mpeg">
+      Tarayıcı ses dosyasını desteklemiyor.
     </audio>
-</div>
-
+  </div>
 </body>
 </html>
